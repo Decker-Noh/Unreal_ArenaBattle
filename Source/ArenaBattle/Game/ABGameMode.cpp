@@ -16,7 +16,7 @@ AABGameMode::AABGameMode()
 		DefaultPawnClass = ThirdPersonClassRef.Class;
 	}*/
 
-	static ConstructorHelpers::FClassFinder<APawn> ThirdPersonClassRef(TEXT("/Script/ArenaBattle.ABCharacterPlayer"));
+	static ConstructorHelpers::FClassFinder<APawn> ThirdPersonClassRef(TEXT("/Script/Engine.Blueprint'/Game/ArenaBattle/Blueprint/BP_Character.BP_Character_C'"));
 	if (ThirdPersonClassRef.Class != nullptr)
 	{
 		DefaultPawnClass = ThirdPersonClassRef.Class;
